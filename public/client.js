@@ -9,6 +9,8 @@ function start() {
 		console.log("Reload styles")
 		reloadStyles();
 	});
+
+	reloadStyles();
 }
 
 function reloadStyles() {
