@@ -2,6 +2,12 @@
 
 The idea is simple: reload all CSS files on a web page if a file changes in a specified directory.
 
+## Installation
+
+```bash
+npm install -g web-reloader
+```
+
 ## Usage
 
 ```bash
@@ -16,8 +22,8 @@ And add the following to your HTML:
 
 Open files, change and save away!
 
-## Installation
+### As a bookmarklet
 
-```bash
-npm install -g web-reloader
-```
+Don't want weird HTML tags floating about in your code? You can use this as a bookmarklet to activate the code.
+
+    javascript:var a = document.createElement("script"); a.src = "http://localhost:13337/"; document.body.appendChild(a); void 0;
